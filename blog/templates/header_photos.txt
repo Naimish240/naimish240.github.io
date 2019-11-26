@@ -51,7 +51,7 @@
 	   <nav id="main-nav-wrap">
 		 <ul class="main-navigation sf-menu">
 			<li><a href="blog.html" title="">Blog</a></li>	
-			<li><a href="single-standard.html" title="">Projects</a></li>								
+			<li><a href="projects.html" title="">Projects</a></li>								
 			<li class="current"><a href="photography.html" title="">Photography</a></li>	
 			<li><a href="contact.html" title="">Contact</a></li>										
 		 </ul>

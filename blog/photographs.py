@@ -46,15 +46,11 @@ def main(username):
     download(username)
     files = get_files(username)
 
-    html = '\n'.join(open('templates/header_p.txt', 'r').readlines())
+    html = '\n'.join(open('templates/header_photos.txt', 'r').readlines())
 
+    print("Generating HTML")
     for i in files:
         html += post(i)
-
-    html += '''</div>
-	   </div>
-   </section>
-</body>'''
 
     html += '\n'.join(open('templates/footer.txt', 'r').readlines())
 
@@ -67,3 +63,4 @@ if __name__ == '__main__':
     parser.add_argument('username', help='Username to generate HTML for', default='the_real_naimish')
     args = parser.parse_args()
     main(args.username)
+    print("Completed.")
